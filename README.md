@@ -5,15 +5,18 @@ peligrosas por su huella SHA-256.
 
 | | |
 |---|---|
-| Revisión | 1 |
-| Huellas | 100 |
-| Generada | 2026-11-12 |
+| Revisión | 2 |
+| Huellas de APK | 200 |
+| Certificados de malware | 58 |
+| Generada | 2026-11-26 |
 | Fuente | [MalwareBazaar](https://bazaar.abuse.ch/) (abuse.ch) |
 
 ## Cómo se verifica
 
-- `biblioteca/hashes.txt`: una huella por línea, ordenadas, con la familia de malware.
-- `biblioteca/firma.json`: firma ECDSA P-256 (SHA256withECDSA) de `hashes.txt`.
+- `biblioteca/v2/base.txt`: huellas de APK y, después de `--- certificados`, huellas
+  SHA-256 de los certificados con que se firmó cada malware. Ordenadas, con la familia.
+- `biblioteca/v2/firma.json`: firma ECDSA P-256 (SHA256withECDSA) de `v2/base.txt`.
+- `biblioteca/hashes.txt` + `firma.json`: solo huellas de APK, para versiones viejas de la app.
 
 La app trae incluida la clave pública y **rechaza** cualquier base que no esté
 firmada por Roma.69, que esté alterada o que sea más vieja que la instalada.
