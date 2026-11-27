@@ -5,10 +5,10 @@ peligrosas por su huella SHA-256.
 
 | | |
 |---|---|
-| Revisión | 3 |
-| Huellas de APK | 10139 |
-| Certificados de malware | 261 |
-| Generada | 2026-11-26 |
+| Revisión | 4 |
+| Huellas de APK | 10140 |
+| Certificados de malware | 501 |
+| Generada | 2026-11-27 |
 | Fuente | [MalwareBazaar](https://bazaar.abuse.ch/) (abuse.ch) |
 
 ## Cómo se verifica
